@@ -31,7 +31,6 @@ function main(){
     $('.shopping-item-delete').click(function(event){
         let item = $(this)
             .closest('li');
-        console.log(item); 
         item.remove();    
     })
 }
