@@ -21,18 +21,18 @@ function main(){
         </li>`);
     });
 
-    $('.shopping-item-toggle').click(function(event){
+    $('ul').on('click', '.shopping-item-toggle',function(event){
         let item = $(this)
             .closest('li')
             .find('.shopping-item');
         checkToggle(item);
-    })
+    });
 
-    $('.shopping-item-delete').click(function(event){
+    $('ul').on('click', '.shopping-item-delete',function(event){
         let item = $(this)
             .closest('li');
         item.remove();    
-    })
+    });
 }
 
 $(main());
